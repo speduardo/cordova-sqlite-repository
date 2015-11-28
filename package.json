@@ -1,0 +1,37 @@
+{
+  "name": "cordova-sqlite-repository",
+  "version": "1.0.0",
+  "description": "Cordova/Phonegap plugin to acsses SQLite Database from any directory",
+  "cordova": {
+    "id": "br.inf.enigma.plugins.sqliterepository",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/speduardo/cordova-sqlite-repository.git"
+  },
+  "keywords": [
+    "sqlite db repository",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "db repository",
+    "database repository",
+    "sqlite database"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Eduardo Pereira",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/speduardo/cordova-sqlite-repository/issues"
+  },
+  "homepage": "hhttps://github.com/speduardo/cordova-sqlite-repository"
+}

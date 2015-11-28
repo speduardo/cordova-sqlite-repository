@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="br.inf.enigma.plugins.sqliterepository"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>SQLiteRepository</name>
+
+    <description>Acsses SQLite Database to any Document Directory in android</description>
+
+     <license>Apache 2.0</license>
+
+     <author>Eduardo Pereira</author>
+
+     <engines>
+        <engine name="cordova" version=">=3.0.0" />
+     </engines>
+
+    <js-module name="dbExport" src="www/SQLiteRepository.js">
+        <clobbers target="window.plugins.SQLiteRepository" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SQLiteRepository">
+                <param name="android-package" value="br.inf.enigma.plugins.sqliterepository.SQLiteRepository" />
+            </feature>
+        </config-file>
+
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        </config-file>
+
+        <source-file src="src/android/SQLiteRepository.java" target-dir="src/br/inf/enigma/plugins/sqliterepository/" />
+        
+    </platform>
+	
+</plugin>
