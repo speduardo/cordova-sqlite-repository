@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cordova/Phonegap plugin to acsses SQLite Database from any directory",
   "cordova": {
-    "id": "br.inf.enigma.plugins.sqliterepository",
+    "id": "br.inf.enigma.sqliterepository",
     "platforms": [
       "android",
       "ios"
