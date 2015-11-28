@@ -79,9 +79,9 @@ public class SQLiteRepository extends SQLitePlugin {
             // [should be true according to the code in DBRunner.run()]
 
             File path = Environment.getExternalStorageDirectory();
-            File newPath = constructFilePaths(path.toString(), '\flyquest\database\flyquest.db');
+            File dbfile = constructFilePaths(path.toString(), '//flyquest//database//flyquest.db');
 
-            File dbfile = this.cordova.getActivity().getDatabasePath(dbname);
+            //File dbfile = this.cordova.getActivity().getDatabasePath(dbname);
 
             if (!dbfile.exists()) {
                 dbfile.getParentFile().mkdirs();
